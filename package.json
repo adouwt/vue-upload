@@ -12,11 +12,13 @@
     "pub": "npm run build && npm publish"
   },
   "dependencies": {
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "vue": "^2.3.3"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/adouwt/vue-upload.git"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
