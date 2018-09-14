@@ -21,9 +21,21 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    //允许使用tab 缩进　
+    'indent':['off','tab'],
+    // 允许箭头函数的参数使用圆括号
+    'arrow-parens': 0,
+    // 允许 async-await
+    'generator-star-spacing': 0,
+    // 允许使用tab
+    "no-tabs":"off",
+ 　　// 允许在development使用debugger
+　　'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, 
+   // 关闭语句强制分号结尾
+   "semi": [0,';'], 
+   //空行最多不能超过3行 
+   "no-multiple-empty-lines": [0, {"max": 3}],
+  //允许禁止混用tab和空格 
+   "no-mixed-spaces-and-tabs": 'off'
   }
 }

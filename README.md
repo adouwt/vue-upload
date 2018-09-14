@@ -5,26 +5,23 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# install 
+ npm install vue-ajax-upload --save
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 使用组件必须传递的参数 options
+options: {
+    'showProgress': true, // 是否显示进度控制
+    'imagePreview': true, // 是否显示图片预览
+    'url': 'str', // 上传接口url
+    'fileUploadName': 'ajax-upload' // 后台采用是什么名字就传递什么名字
+}
+# dom 组件使用
+<hupload :options=options v-on:receiveUploadMsg="receiveUploadMsg"> </hupload>
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+#js 接受的信息判断
+methods: {
+    receiveUploadMsg (msg) {
+      // msg ....
+    }
+}
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

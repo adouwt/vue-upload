@@ -26,7 +26,7 @@
 </template>
 <script>
 export default {
-  name: 'upload',
+  name: 'hupload',
   props: ['options'],
   data () {
     return {
@@ -54,8 +54,8 @@ export default {
         return
       }
       if (this.options.limitSize) {
-        if (file.files[0].size > (this.options.limitSize.parseInt()) * 1e6) {
-          alert(`文件大小不得超过${this.options.limitSize.parseInt()}M`)
+        if (file.files[0].size > (this.options.limitSize) * 1e6) {
+          alert(`文件大小不得超过${this.options.limitSize}M`)
           return
         }
       } else {
@@ -161,6 +161,87 @@ export default {
     margin-bottom: 10px;
   }
   .mt-sm {
+    margin-top: 10px;
+  }
+  .wt-upload {
+    text-align: left;
+  }
+  .file-area {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .file-area  .file {
+    display: none;
+  }
+  .wt-upload  .file-label {
+    display: block;
+    width: 100px;
+    padding: 8px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+    text-align: center;
+  }
+  .wt-upload .file-label:hover {
+    background: rgb(123, 219, 200);
+  }
+  .wt-upload .file-label:focus {
+      background: rgb(32, 148, 125);
+  }
+  .wt-upload .img-preview {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .wt-upload  .upload,.wt-upload .abort {
+    display: inline-block;
+    width: 100px;
+    padding: 8px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .wt-upload  .upload:hover {
+    background: rgb(123, 219, 200);
+  }
+  .wt-upload .upload:focus {
+    background: rgb(32, 148, 125);
+  }
+  .wt-upload .progress-area {
+    padding: 20px;
+  }
+  .wt-upload .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+  .wt-upload  .progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+  }
+  .wt-upload .time {
     margin-top: 10px;
   }
 </style>

@@ -3,10 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import upload from '../dist/vueUpload.js'
 
 Vue.config.productionTip = false
-Vue.use(upload)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

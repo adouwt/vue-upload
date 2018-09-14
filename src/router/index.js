@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import uploadUse from '@/test/upload-use'
+import devUploadUse from '@/dev/dev-upload'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/upload-use',
+      name: 'uploadUse',
+      component: uploadUse
+    },
+    {
+      path: '/dev-upload-use',
+      name: 'devUploadUse',
+      component: devUploadUse
     }
   ]
 })

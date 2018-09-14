@@ -15,7 +15,6 @@
     "dist:prod": "webpack --config build/webpack.dist.prod.config.js"
   },
   "dependencies": {
-    "compression-webpack-plugin": "^2.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
