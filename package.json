@@ -5,6 +5,12 @@
   "author": "adoubetao <13161282746@163.com>",
   "private": false,
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "plugin",
+    "upload"
+  ],
   "main": "dist/vueUpload.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
