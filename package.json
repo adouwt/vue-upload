@@ -1,8 +1,8 @@
 {
-  "name": "vue-upload",
+  "name": "vue-ajax-upload",
   "version": "0.1.5",
-  "description": "A Vue.js project",
-  "author": "wangtao <13161282746@163.com>",
+  "description": "A Vue component to ajax-upload",
+  "author": "adoubetao <13161282746@163.com>",
   "private": false,
   "license": "MIT",
   "main": "dist/vueUpload.js",
