@@ -1,24 +1,27 @@
 {
-  "name": "vue-ajax-upload",
-  "version": "1.0.0",
+  "name": "vue-upload",
+  "version": "0.1.5",
   "description": "A Vue.js project",
-  "author": "wangtao <wangt02@zendaimoney.com>",
-  "private": true,
+  "author": "wangtao <13161282746@163.com>",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/vueUpload.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "dist:prod": "webpack --config build/webpack.dist.prod.config.js"
+    "dist": "webpack --config build/webpack.dist.config.js",
+    "pub": "npm run dist && npm publish"
   },
   "dependencies": {
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adouwt/vue-upload.git"
   },
   "devDependencies": {
+    "vue-router": "^3.0.1",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
