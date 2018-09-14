@@ -1,17 +1,17 @@
 {
   "name": "vue-ajax-upload",
-  "version": "0.1.5",
-  "description": "A Vue component to ajax-upload",
+  "version": "0.1.7",
+  "description": "A Vue component to vue upload",
   "author": "adoubetao <13161282746@163.com>",
   "private": false,
   "license": "MIT",
   "keywords": [
     "vue",
     "vue.js",
-    "plugin",
+    "vue-plugin",
     "upload"
   ],
-  "main": "dist/vueUpload.js",
+  "main": "dist/vueAjaxUpload.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -20,6 +20,7 @@
     "pub": "npm run dist && npm publish"
   },
   "dependencies": {
+    "vue-router": "^3.0.1",
     "vue": "^2.5.2"
   },
   "repository": {
@@ -27,7 +28,6 @@
     "url": "https://github.com/adouwt/vue-upload.git"
   },
   "devDependencies": {
-    "vue-router": "^3.0.1",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
