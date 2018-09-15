@@ -1,7 +1,8 @@
 # vue-ajax-upload
 
 > A Vue.js project
-
+### 注意：
+#####   下载后 npm run dev 执行前，先执行 npm run dist , 因为项目中的test 文件夹就是引用dist 文件夹下的js
 ## Build Setup
 
 ``` bash

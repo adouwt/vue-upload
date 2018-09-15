@@ -7,7 +7,7 @@
 
 <script>
 import Vue from 'vue'
-import upload from '../../dist/vueUpload.js'
+import upload from '../../dist/vueAjaxUpload.js'
 Vue.use(upload)
 export default {
 	data () {
