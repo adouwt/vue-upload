@@ -14,7 +14,7 @@ options: {
     'imagePreview': true, // 是否显示图片预览
     'url': 'str', // 上传接口url
     'fileUploadName': 'ajax-upload', // 后台采用是什么名字就传递什么名字
-    'limitSize': 1 // 限制文件上传的大小
+    'limitSize': 1 // 限制文件上传的大小单位是 M
 }
 # dom 组件使用
 <hupload :options=options v-on:receiveUploadMsg="receiveUploadMsg"> </hupload>
